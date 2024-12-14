@@ -11,45 +11,27 @@ This notebook performs an analysis of the Biodiversity Intactness Index (BII) fo
 - Shapefile (tl_2016_04_tract.shp): Census tract boundaries for Arizona from the U.S. Census Bureau, used to define the boundary of Maricopa County.
 
 ### Repository Structure
-
-.
+```bash
 ├── README.md
-
 ├── biodiversity_phoenix.ipynb
-
 └── data
-
     ├── subdivision
-    
     │   ├── tl_2024_04_cousub.cpg
-    
     │   ├── tl_2024_04_cousub.dbf
-    
     │   ├── tl_2024_04_cousub.prj
-    
     │   ├── tl_2024_04_cousub.shp
-    
     │   ├── tl_2024_04_cousub.shp.ea.iso.xml
-    
     │   ├── tl_2024_04_cousub.shp.iso.xml
-    
     │   └── tl_2024_04_cousub.shx
-    
     ├── tl_2016_04_tract.cpg
-    
     ├── tl_2016_04_tract.dbf
-    
     ├── tl_2016_04_tract.prj
-    
     ├── tl_2016_04_tract.shp
-    
     ├── tl_2016_04_tract.shp.ea.iso.xml
-    
     ├── tl_2016_04_tract.shp.iso.xml
-    
     ├── tl_2016_04_tract.shp.xml
-    
     └── tl_2016_04_tract.shx
+```
 
 ### References
 
