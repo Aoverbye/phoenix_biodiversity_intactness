@@ -7,8 +7,10 @@ This notebook performs an analysis of the Biodiversity Intactness Index (BII) fo
 
 ### Data
 
-- io-biodiversity dataset: The data consists of global biodiversity intactness estimates at 100-meter resolution for the years 2017 and 2020. Intactness estimates are based on a combination of abundance and compositional similarity .
-- Shapefile (tl_2016_04_tract.shp): Census tract boundaries for Arizona from the U.S. Census Bureau, used to define the boundary of Maricopa County.
+- **io-biodiversity dataset**:
+  The biodiversity data can be accessed through the io-biodiversity collection available on [Microsoft's Planetary Computer](https://planetarycomputer.microsoft.com/dataset/io-biodiversity). This dataset contains Biodiversity Intactness Index (BII) values at a 100-meter resolution for the years 2017–2020, provided by Impact Observatory and Vizzuality. To begin, you can use the pystac_client library to access the STAC catalog and download the relevant data for the desired area and time period.
+  
+- **Shapefile (tl_2016_04_tract.shp)**: The county shapefile was obtained from the [United States Census Bureau website](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) and contains Census tract boundaries for Arizona. The data was downloaded as a shapefile and placed into the project's data folder. The os library was used to generate an absolute filepath, and the shapefile was read into the project using the GeoPandas package via the gpd.read_file() method.
 
 ### Repository Structure
 ```bash
@@ -34,7 +36,15 @@ phoenix_biodiversity_intactness
     └── tl_2016_04_tract.shx
 ```
 
+### Acknowledgements
+
+The repository was created as part of an assignment for the University of California, Santa Barbara course EDS 220: Working with Environmental Datasets. Details of the assignment can be found at the [course website](https://meds-eds-220.github.io/MEDS-eds-220-course/assignments/final-project.html)
+
 ### References
+
+Microsoft Planetary Computer, *STAC Catalog. Biodiversity Intactness*. [Dataset]. https://planetarycomputer.microsoft.com/dataset/io-biodiversity. Accessed 7 December, 2024.
+
+United States Census Bureau. 2024. *Arizona County TIGER/Line Shapefiles*. [Dataset]. United States Census Bureau. https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html. Accessed 7 December, 2024.
 
 Microsoft Planetary Computer, STAC Catalog. Biodiversity Intactness. [Dataset]. https://planetarycomputer.microsoft.com/dataset/io-biodiversity. Accessed 7 December, 2024.
 
