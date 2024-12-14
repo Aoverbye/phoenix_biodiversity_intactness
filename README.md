@@ -12,6 +12,7 @@ This notebook performs an analysis of the Biodiversity Intactness Index (BII) fo
 
 ### Repository Structure
 ```bash
+phoenix_biodiversity_intactness
 ├── README.md
 ├── biodiversity_phoenix.ipynb
 └── data
